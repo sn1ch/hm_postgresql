@@ -72,16 +72,17 @@ if __name__ == '__main__':
     long_ago2 = now - timedelta(days=365 * 10)
     long_ago3 = now - timedelta(days=365 * 5)
 
-    students = [{'name': 'Mr Black2',
-                 'gpa': 3.4,
-                 'birth': long_ago},
-                {'name': 'Mr Pink2',
-                 'gpa': 2,
-                 'birth': long_ago2},
-                {'name': 'Mr Blue2',
-                 'gpa': 4.7,
-                 'birth': long_ago2}
-                ]
+    students = [
+        {'name': 'Mr Black2',
+         'gpa': 3.4,
+         'birth': long_ago},
+        {'name': 'Mr Pink2',
+         'gpa': 2,
+         'birth': long_ago2},
+        {'name': 'Mr Blue2',
+         'gpa': 4.7,
+         'birth': long_ago2}
+    ]
 
     create_db()
     add_student(name='Jnon Pen', gpa=2, birth=long_ago3)
